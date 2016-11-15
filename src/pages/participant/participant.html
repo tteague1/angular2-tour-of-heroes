@@ -6,19 +6,60 @@
 
 <ion-content padding>
   <h2>Participant Information</h2>
-    <div>
+    
       <p>
        Please enter the participant infomation below and click save.
       </p>
-      <!--<p>
-       The main goal here is to assist you in keeping the children of your event safe. By using the tabs at the 
-       bottom, you can start adding event info, child information and then see a final screen with the
-       information entered.
-      </p>  -->
-    </div>  
+      <ion-thumbnail>
+      
+      </ion-thumbnail>
+      <ion-item>
+    <ion-label>Present</ion-label>
+    <ion-checkbox [(ngModel)]="pepperoni"></ion-checkbox>
+  </ion-item>
 
-  <!--<p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>-->
+  <ion-item>
+    <ion-label>Dropped Off</ion-label>
+    <ion-checkbox [(ngModel)]="sausage" ></ion-checkbox>
+  </ion-item>
+      
+  
+    <ion-list>
+  <ion-item>
+    <ion-label color="primary">Participant Name</ion-label>
+    <ion-input placeholder="Here"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="dark">Time In</ion-label>
+    <ion-datetime displayFormat="HH:mm" [(ngModel)]="myDate"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="dark">Time Out</ion-label>
+    <ion-datetime displayFormat="HH:mm" [(ngModel)]="myDate"></ion-datetime>
+  </ion-item>
+
+
+  
+
+  
+
+</ion-list>
+
+
+
+
+
+      
+
+  <button ion-button icon-left>
+  <ion-icon name="star"></ion-icon>
+  Clear
+</button>
+
+<button ion-button icon-right>
+  <ion-icon name="star"></ion-icon>
+   Save
+</button>
 </ion-content>

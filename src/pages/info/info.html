@@ -7,11 +7,45 @@
 </ion-header>
 
 <ion-content>
+  
   <ion-list>
-    <ion-list-header>Follow us on Twitter and on Facebook</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-left></ion-icon>
-      This will be the final event information
-    </ion-item>
+    <ion-list-header>Event</ion-list-header>
+  
+
+  <ion-list>
+    <ion-list-header >Date</ion-list-header>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header >Start</ion-list-header>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header >End</ion-list-header>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header >Location</ion-list-header>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header >Participants</ion-list-header>
+  </ion-list>
+
+<div padding>
+  <ion-segment [(ngModel)]="participant">
+    <ion-segment-button value="participant">
+      Participants
+    </ion-segment-button>
+    
+</div>
+
+
+
+ 
+
+    
+
+    
   </ion-list>
 </ion-content>
